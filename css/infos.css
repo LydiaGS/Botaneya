@@ -1,0 +1,12 @@
+/* ===== ABOUT ===== */
+.about {
+    padding: 100px 0;
+    text-align: center;
+    background-color: var(--secondary);
+}
+
+.about p {
+    max-width: 600px;
+    margin: 20px auto 0;
+}
+

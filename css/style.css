@@ -1,0 +1,210 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Amaranth', sans-serif;
+    background-color: var(--secondary);
+    color: var(--primary);
+    line-height: 1.6;
+}
+
+/* ===== GLOBAL ===== */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container-top {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Texte centré visuellement */
+.container-top p {
+    margin: 0;
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    color: var(--secondary);
+}
+.container 
+h1, h2, h3 {
+    font-family: 'Amaranth', sans-serif;
+}
+.conatcter{
+    font-size: 30px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ===== BUTTONS ===== */
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--secondary);
+    padding: 15px 35px;
+    border-radius: 40px;
+    font-weight: 700;
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--primary);
+    padding: 15px 35px;
+    border-radius: 40px;
+    font-weight: 700;
+}
+.botaneya-icon {
+  color: #7B4931;
+  font-size: 22px;
+  margin: 0 8px;
+   opacity: 0.6;
+   font-size: 18px;
+}
+
+
+
+/* ===============================
+   RESPONSIVE – TABLETTE
+================================ */
+@media (max-width: 1024px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .container-top {
+        padding: 0 15px;
+    }
+
+    .container-top p {
+        font-size: 13px;
+    }
+
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 36px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+}
+
+/* ===============================
+   RESPONSIVE – MOBILE
+================================ */
+@media (max-width: 768px) {
+
+    body {
+        line-height: 1.5;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .container-top {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .container-top p {
+        font-size: 12px;
+    }
+
+    h1 {
+        font-size: 34px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 14px 28px;
+        font-size: 14px;
+    }
+}
+
+/* ===============================
+   RESPONSIVE – PETIT MOBILE (320px)
+================================ */
+@media (max-width: 480px) {
+
+    .container {
+        width: 96%;
+    }
+
+    h1 {
+        font-size: 26px;
+        line-height: 1.2;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .container-top p {
+        font-size: 11px;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        padding: 14px 0;
+        text-align: center;
+    }
+
+    .botaneya-icon {
+        font-size: 16px;
+        margin: 0 6px;
+    }
+}
+/* CROIX FERMETURE PAGE */
+.close-page {
+    position: fixed;
+    top: 20px;
+    right: 25px;
+    font-size: 32px;
+    font-weight: 300;
+    color: #000;
+    text-decoration: none;
+    z-index: 9999;
+    cursor: pointer;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.close-page:hover {
+    transform: scale(1.15);
+    opacity: 0.7;
+}
+@media (max-width: 480px) {
+    .close-page {
+        top: 15px;
+        right: 15px;
+        font-size: 26px;
+    }
+}

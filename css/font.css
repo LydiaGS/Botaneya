@@ -1,0 +1,16 @@
+/* ===== TYPOGRAPHIE ===== */
+@font-face {
+    font-family: 'Dream Avenue';
+    src: url('fonts/DreamAvenue.ttf') format('truetype');
+}
+
+/* ===== VARIABLES ===== */
+:root {
+    --primary: #7B4931;
+    --secondary: #FFF9F1;
+    --accent-1: #C78F78;
+    --accent-2: #DBBCAA;
+    --accent-3: #EFD6D2;
+    --accent-4: #FBEBD4;
+    --hover:black;
+}
