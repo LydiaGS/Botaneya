@@ -1,18 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="BOTANEYA sublime les cheveux bouclés avec une cosmétique botanique naturelle, végane et respectueuse. Révélez votre beauté au naturel.">
-    <!-- Font-awsone -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/paymentfont/1.2.5/css/paymentfont.min.css">
-    <!-- Google Font -->
+     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
-
-    <!-- CSS-->
+     <!-- CSS-->
+ <!-- CSS-->
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navfoot.css">
@@ -20,11 +14,10 @@
     <link rel="stylesheet" href="./css/infos.css">
     <link rel="stylesheet" href="./css/acueill.css">
     <link rel="stylesheet" href="./css/contact.css">
-    <title>BOTANEYA | Cosmétique Botanique pour Cheveux Bouclés Naturels </title>
+    <title>Document</title>
 </head>
-
 <body>
-    <!-- header-top-->
+       <!-- header-top-->
     <header class="header-top">
         <div class="container-top">
             <p>Livraison offerte en France métropolitaine, Belgique, Luxembourg, Allemagne et Espagne dès 100€ d'achat*
@@ -41,46 +34,45 @@
 
         </div>
     </header>
-    <!-- header-nav-->
-    <header class="header">
-        <div class="container header-content">
-            <div class="logo">BOTANEYA</div>
-            <nav class="nav">
-                <a href="./index.html">Accueil</a>
-                <a href="./product.html">Produits</a>
-                <a href="./infos.html">Nous connaître</a>
-                <a href="#">Fidélité et parrainage</a>
-                <a href="./conatct.html">contact</a>
-                <a href="#">FAQ</a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-                  <a href="#" id="cart-btn">
-                    <i class="fa-solid fa-bag-shopping"></i>
-                    <span id="cart-count"></span>
-                </a>
-            </nav>
+   <section class="hero">
+        <div class="container_1 hero-content">
+
+            <!-- COLONNE GAUCHE : TEXTE -->
+            <div class="hero-text">
+                <h1>Mon Panier</h1>
+            </div>
+            <!-- COLONNE DROITE : IMAGE -->
+            <div class="hero-image">
+                <img class="img_heros" src="./asset/image/sansfontfinale1.png" alt="Produits Botaneya">
+            </div>
+
         </div>
-    </header>
-    <!-- Section hero-->
-<section class="video-banner">
-    <video
-        class="video-bg"
-        autoplay
-        muted
-        loop
-        playsinline
-        preload="auto">
-        
-        <source src="./asset/vidéo/ANIM 1.mp4" type="video/mp4">
-        Ton navigateur ne supporte pas la vidéo.
-    </video>
-    <div class="video-overlay"></div>
-    <div class="video-content container">
-        <h1 class="conatcter">Nous Contacter</h1>  
+    </section>
+<section class="cart-page">
+<table class="cart-table">
+    <thead>
+        <tr>
+            <th>Produit</th>
+            <th>Nom</th>
+            <th>Prix</th>
+            <th>Supprimer</th>
+        </tr>
+    </thead>
+    <tbody id="cart-body"></tbody>
+</table>
+
+
+    <div class="cart-summary" id="cart-summary">
+        <p>Total : <strong><span id="cart-total">0.00</span> €</strong></p>
+        <button class="pay-btn">PAYER</button>
+    </div>
+
+    <div class="empty-cart" id="empty-cart" style="display:none;">
+        <p>Ton panier est vide.</p>
+        <a href="./product.html">← Retour aux produits</a>
     </div>
 </section>
-
-   
-     <!-- footer-->
+ <!-- footer-->
     <footer class="site-footer">
         <div class="container footer-grid">
 
@@ -161,23 +153,8 @@
         </div>
     </section>
     </footer>
-     <div id="cart-drawer">
-        <div class="cart-header">
-            <h3>Mon panier</h3>
-            <button id="close-cart">✖</button>
-        </div>
-
-        <div id="cart-items"></div>
-
-        <div class="cart-footer">
-            <p class="cart-total">
-                Total : <strong><span id="cart-total">0.00</span> €</strong>
-            </p>
-            <button class="btn primary">VOIR LE PANIER</button>
-        </div>
-    </div>
-      <script src="./javascrpits/scripts.js"></script>
-        <script src="./javascrpits/product.js"></script>
+  <script src="./javascrpits/scripts.js"></script>
+       <script src="./javascrpits/panier.js"></script>
+    <script src="./javascrpits/product.js"></script>
 </body>
-
 </html>

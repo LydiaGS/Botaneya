@@ -27,6 +27,7 @@
 </head>
 
 <body>
+
     <!-- header-top-->
     <header class="header-top">
         <div class="container-top">
@@ -56,7 +57,11 @@
                 <a href="./conatct.html">contact</a>
                 <a href="#">FAQ</a>
                 <a href="#"><i class="fa-solid fa-user"></i></a>
-                <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
+                <a href="#" id="cart-btn">
+                    <span id="cart-count"></span>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
+
             </nav>
         </div>
     </header>
@@ -90,16 +95,22 @@
 
                     <div class="product-image">
 
-                        <a href="./bainmiraculeux.html"><img src="./asset/image/gougoute.jpg" alt="Huile ayurvédique"></a>
-                        <a href="./bainmiraculeux.html"><img src="./asset/image/bainmiraculeuxfleur1.png" alt="Huile ayurvédique"
-                                class="img-hover"></a>
+                        <a href="./bainmiraculeux.html"><img src="./asset/image/gougoute.jpg"
+                                alt="Huile ayurvédique"></a>
+                        <a href="./bainmiraculeux.html"><img src="./asset/image/bainmiraculeuxfleur1.png"
+                                alt="Huile ayurvédique" class="img-hover"></a>
                     </div>
 
 
                     <p class="price">39,99€</p>
 
                     <div class="rating">★★★★★ <span>(4.8)</span></div>
-                    <button class="btn primary">AJOUTER AU PANIER</button>
+         
+                    <button class="btn primary add-to-cart" data-name="Bain miraculeux" data-price="39,99€">
+                        AJOUTER AU PANIER
+                    </button>
+
+
                     <!--  <button class="btn disabled">ÉPUISÉ</button>-->
                 </div>
 
@@ -109,7 +120,8 @@
                     <h2>Goute Routine Boucle</h2>
                     <!--<span class="badge promo">PROMO</span>-->
                     <div class="product-image">
-                        <a href="./botaneya.html"><img src="./asset/image/BotaneyaFontBlanc.jpg" alt="Duo routine boucle"></a>
+                        <a href="./botaneya.html"><img src="./asset/image/BotaneyaFontBlanc.jpg"
+                                alt="Duo routine boucle"></a>
                         <a href="./botaneya.html"><img src="./asset/image/botaneyafleur1.png" alt="Huile ayurvédique"
                                 class="img-hover"></a>
                     </div>
@@ -121,16 +133,20 @@
 
                     <div class="rating">★★★★★ <span>(5.0)</span></div>
 
-                    <button class="btn primary">AJOUTER AU PANIER</button>
+                    <button class="btn primary add-to-cart" data-name="Goute Routine Boucle" data-price="59,99€">
+                        AJOUTER AU PANIER
+                    </button>
+
                 </div>
 
                 <!-- Produit 3 -->
                 <div class="product-card">
                     <h2>Crème pour Boucles</h2>
                     <div class="product-image">
-                        <a href="./cremeboucle.html"><img src="./asset/image/laCremeBoucleFontBlanc.jpg" alt="Leave-in"></a>
-                        <a href="./cremeboucle.html"><img src="./asset/image/crèmebouclefleur1.png" alt="Huile ayurvédique"
-                                class="img-hover"></a>
+                        <a href="./cremeboucle.html"><img src="./asset/image/laCremeBoucleFontBlanc.jpg"
+                                alt="Leave-in"></a>
+                        <a href="./cremeboucle.html"><img src="./asset/image/crèmebouclefleur1.png"
+                                alt="Huile ayurvédique" class="img-hover"></a>
                     </div>
 
 
@@ -138,57 +154,71 @@
 
                     <div class="rating">★★★★★ <span>(4.8)</span></div>
 
-                    <button class="btn primary">AJOUTER AU PANIER</button>
+                    <button class="btn primary add-to-cart" data-name="Crème pour Boucles" data-price="29,99">
+                        AJOUTER AU PANIER
+                    </button>
+
                 </div>
 
                 <!-- Produit 4 -->
                 <div class="product-card">
                     <h2>Masque pour boucles</h2>
                     <div class="product-image">
-                        <a href="./masqueboucle.html"><img src="./asset/image/leMasqueFontBlanc.jpg" alt="Gelée fixatrice"></a>
-                        <a href="./masqueboucle.html"> <img src="./asset/image/masquebuoclesfleur.png" alt="Huile ayurvédique"
-                                class="img-hover"></a>
+                        <a href="./masqueboucle.html"><img src="./asset/image/leMasqueFontBlanc.jpg"
+                                alt="Gelée fixatrice"></a>
+                        <a href="./masqueboucle.html"> <img src="./asset/image/masquebuoclesfleur.png"
+                                alt="Huile ayurvédique" class="img-hover"></a>
                     </div>
 
                     <p class="price">29,99€</p>
 
                     <div class="rating">★★★★★ <span>(4.7)</span></div>
+                    <button class="btn primary add-to-cart" data-name="Masque pour boucles" data-price="29,99€">
+                        AJOUTER AU PANIER
+                    </button>
 
-                    <button class="btn primary">AJOUTER AU PANIER</button>
                 </div>
 
                 <!-- Produit 5 -->
                 <div class="product-card">
                     <h2>Masque réparateur</h2>
                     <div class="product-image">
-                        <a href="./masquereparateur.html"><img src="./asset/image/leMasqueReparateurFontBlanc.jpg" alt="Gelée fixatrice"></a>
-                        <a href="./masquereparateur.html"><img src="./asset/image/masquereparateurfleur1.png" alt="Huile ayurvédique"
-                                class="img-hover"></a>
+                        <a href="./masquereparateur.html"><img src="./asset/image/leMasqueReparateurFontBlanc.jpg"
+                                alt="Gelée fixatrice"></a>
+                        <a href="./masquereparateur.html"><img src="./asset/image/masquereparateurfleur1.png"
+                                alt="Huile ayurvédique" class="img-hover"></a>
                     </div>
                     <p class="price">19,99€</p>
 
                     <div class="rating">★★★★★ <span>(4.7)</span></div>
 
-                    <button class="btn primary">AJOUTER AU PANIER</button>
+                    <button class="btn primary add-to-cart" data-name="Masque réparateur" data-price="19,99€">
+                        AJOUTER AU PANIER
+                    </button>
+
                 </div>
                 <!-- Produit 6 -->
                 <div class="product-card">
                     <h2>Sérum de finition</h2>
                     <div class="product-image">
-                        <a href="./serum.html"><img src="./asset/image/SerumeUltimeFontBlanc.jpg" alt="Gelée fixatrice"></a>
+                        <a href="./serum.html"><img src="./asset/image/SerumeUltimeFontBlanc.jpg"
+                                alt="Gelée fixatrice"></a>
                         <a href="./serum.html"><img src="./asset/image/sermumfleur1.png" alt="Huile ayurvédique"
                                 class="img-hover"></a>
                     </div>
                     <p class="price">9,99€</p>
 
                     <div class="rating">★★★★★ <span>(4.7)</span></div>
-                    <button class="btn primary">AJOUTER AU PANIER</button>
+                    <button class="btn primary add-to-cart" data-name="Sérum de finition" data-price="9,99€">
+                        AJOUTER AU PANIER
+                    </button>
+
                 </div>
 
             </div>
         </div>
     </section>
-  <!-- footer-->
+    <!-- footer-->
     <footer class="site-footer">
         <div class="container footer-grid">
 
@@ -241,34 +271,54 @@
         </div>
         <br> <br>
         <section class="shipping-bar">
-        <div class="container shipping-text">
-            <p>
-                <strong>*Livraison offerte</strong> en France métropolitaine
-                (Colissimo - Mondial Relay Point retrait), Belgique (Mondial Relay Domicile + Point retrait),
-                Luxembourg (Mondial Relay Point retrait), Allemagne (Mondial Relay Domicile)
-                et Espagne (Mondial Relay Point retrait) dès 100€ d'achat.
-            </p>
-        </div>
+            <div class="container shipping-text">
+                <p>
+                    <strong>*Livraison offerte</strong> en France métropolitaine
+                    (Colissimo - Mondial Relay Point retrait), Belgique (Mondial Relay Domicile + Point retrait),
+                    Luxembourg (Mondial Relay Point retrait), Allemagne (Mondial Relay Domicile)
+                    et Espagne (Mondial Relay Point retrait) dès 100€ d'achat.
+                </p>
+            </div>
 
-        <div class="payment-bar">
-            <div class="container payment-content">
+            <div class="payment-bar">
+                <div class="container payment-content">
 
-                <div class="brand">
-                    <div class="gift-icon">🎁</div>
-                    <span>Botanical Beauty</span>
-                </div>
+                    <div class="brand">
+                        <div class="gift-icon">🎁</div>
+                        <span>Botanical Beauty</span>
+                    </div>
 
-                <div class="payment-icons">
-                    <i class="pf pf-apple-pay"></i>
-                    <i class="pf pf-cb"></i>
-                    <i class="pf pf-mastercard"></i>
-                    <i class="pf pf-paypal"></i>
-                    <i class="pf pf-visa"></i>
+                    <div class="payment-icons">
+                        <i class="pf pf-apple-pay"></i>
+                        <i class="pf pf-cb"></i>
+                        <i class="pf pf-mastercard"></i>
+                        <i class="pf pf-paypal"></i>
+                        <i class="pf pf-visa"></i>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     </footer>
+    <div id="cart-overlay"></div>
+
+    <div id="cart-drawer">
+        <div class="cart-header">
+            <h3>Mon panier</h3>
+            <button id="close-cart">✖</button>
+        </div>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-footer">
+            <p class="cart-total">
+                Total : <strong><span id="cart-total">0.00</span> €</strong>
+            </p>
+            <button class="btn primary"><a href="./panier.html">VOIR LE PANIER</a></button>
+        </div>
+    </div>
+        <script src="./javascrpits/scripts.js"></script>
+       <script src="./javascrpits/panier.js"></script>
+    <script src="./javascrpits/product.js"></script>
 </body>
 
 </html>
