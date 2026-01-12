@@ -1,41 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/404.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Page introuvable – BOTANEYA</title>
+
+  <!-- IMPORTANT : ne pas indexer -->
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="stylesheet" href="./css/404.css">
 </head>
+
 <body>
-<!-- SVG flottants -->
-<img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" class="svg-float f1" alt="">
-<img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" class="svg-float f2" alt="">
-<img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" class="svg-float f3" alt="">
 
-<!-- 🎥 VIDEO EN HAUT -->
+  <!-- SVG flottants -->
+  <img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" class="svg-float f1" alt="Logo Botaneya">
+  <img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" class="svg-float f2" alt="Logo Botaneya">
+  <img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" class="svg-float f3" alt="Logo Botaneya">
+
+  <!-- 🎥 VIDEO -->
 <section class="video-banner">
-    <video class="video-bg" autoplay muted loop playsinline>
-        <source src="./asset/vidéo/ANIM 1.mp4" type="video/mp4">
-        Ton navigateur ne supporte pas la vidéo.
-    </video>
-    <div class="video-overlay"></div>
-    <div class="video-content">
-        <a href="./conatct.html" class="btn-primary">Nous Contacter</a>
-    </div>
+  <video
+    class="video-bg"
+    autoplay
+    muted
+    loop
+    playsinline
+    preload="none"
+    poster="./asset/image/packversionfinale.png"
+    aria-hidden="true"
+  >
+    <source src="./asset/vidéo/ANIM-1.mp4" type="video/mp4">
+    Ton navigateur ne supporte pas la vidéo.
+  </video>
+
+  <div class="video-overlay"></div>
+
+  <div class="video-content">
+    <a href="./contact.html" class="btn-primary">Nous contacter</a>
+  </div>
 </section>
 
-<!-- 📦 CONTENU 404 -->
-<section class="page-404">
+
+  <!-- 📦 CONTENU 404 -->
+  <section class="page-404">
     <div class="container">
-        <h1>404</h1>
-        <h2>Page introuvable</h2>
-        <p>
-            Cette page s’est égarée dans le jardin…  
-            Revenez à l’accueil pour poursuivre votre visite.
-        </p>
-        <a href="./index.html" class="btn-home">Retour à l’accueil</a>
+      <h1>404</h1>
+      <h2>Page introuvable</h2>
+      <p>
+        Cette page s’est égarée dans le jardin BOTANEYA 🌿  
+        Revenez à l’accueil pour poursuivre votre visite.
+      </p>
+      <a href="./index.html" class="btn-home">Retour à l’accueil</a>
     </div>
-        <script src="./javascrpits/product.js"></script>
-</section>
+  </section>
+  <script>
+    gtag('event', '404', {
+  page_path: window.location.pathname
+});
+  </script>
 </body>
 </html>

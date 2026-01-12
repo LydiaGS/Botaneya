@@ -27,9 +27,9 @@
 </head>
 
 <body>
-     <a href="./product.html" class="close-page">
-    <i class="fa-solid fa-xmark"></i>
-</a>
+    <a href="./product.html" class="close-page">
+        <i class="fa-solid fa-xmark"></i>
+    </a>
     <!-- Section hero-->
     <section class="hero">
         <div class="container hero-content">
@@ -63,19 +63,18 @@
 
 
                 <!-- COLONNE DROITE : IMAGE -->
-              <div class="product-card-1">
+                <div class="product-card-1">
                     <h2></h2>
                     <div class="product-image-1">
-                      <img src="./asset/image/serumsansfont.png" alt="Gelée fixatrice">
-                   <img src="./asset/image/goute.png" alt="Huile ayurvédique"
-                                class="img-hover-1">
+                        <img src="./asset/image/serumsansfont.png" alt="Gelée fixatrice">
+                        <img src="./asset/image/goute.png" alt="Huile ayurvédique" class="img-hover-1">
                     </div>
                     <p class="price-1">9,99€</p>
                 </div>
 
             </div>
     </section>
-     <section class="engagements">
+    <section class="engagements">
         <div class="container engagements-grid">
 
             <div class="engagement-item">
@@ -98,7 +97,28 @@
             </div>
         </div>
     </section>
-        <script src="./javascrpits/product.js"></script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "Sérum de Finition",
+  "image": "https://www.botaneya.com/asset/image/serum-finition.jpg",
+  "description": "Sérum botanique naturel et végane pour apporter brillance, protection et finition aux cheveux bouclés.",
+  "brand": {
+    "@type": "Brand",
+    "name": "BOTANEYA"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "EUR",
+    "price": "9.99",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.botaneya.com/serum.html"
+  }
+}
+</script>
+
+    <script src="./javascrpits/product.js"></script>
     <script src="./javascrpits/accueill.js"></script>
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </body>

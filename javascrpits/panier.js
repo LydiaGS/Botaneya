@@ -1,73 +1,42 @@
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
-const cartBody = document.getElementById("cart-body");
-const cartTotal = document.getElementById("cart-total");
-const emptyCart = document.getElementById("empty-cart");
-const cartTable = document.getElementById("cart-table");
-const cartSummary = document.getElementById("cart-summary");
-
-function renderCart() {
-    cartBody.innerHTML = "";
-    let total = 0;
-
-    if (cart.length === 0) {
-        cartTable.style.display = "none";
-        cartSummary.style.display = "none";
-        emptyCart.style.display = "block";
-        return;
-    }
-
-    cart.forEach((item, index) => {
-        total += item.price;
-
-        cartBody.innerHTML += `
-            <tr>
-                <td>${item.name}</td>
-                <td>${item.price.toFixed(2)} €</td>
-                <td>
-                    <button class="remove-btn" onclick="removeItem(${index})">✖</button>
-                </td>
-            </tr>
-        `;
-    });
-
-    cartTotal.textContent = total.toFixed(2);
-}
-
-function removeItem(index) {
-    cart.splice(index, 1);
-    localStorage.setItem("cart", JSON.stringify(cart));
-    renderCart();
-}
-
-renderCart();
-let cart = JSON.parse(localStorage.getItem("cart")) || [];
-
+/* =====================
+   ELEMENTS
+===================== */
+const cartBtn = document.getElementById("cart-btn");
+const cartDrawer = document.getElementById("cart-drawer-overlay");
+const cartOverlay = document.getElementById("cart-overlay");
+const closeCart = document.getElementById("close-cart");
 const cartItems = document.getElementById("cart-items");
 const cartTotal = document.getElementById("cart-total");
 const cartCount = document.getElementById("cart-count");
 
-const cartBtn = document.getElementById("cart-btn");
-const cartDrawer = document.getElementById("cart-drawer");
-const cartOverlay = document.getElementById("cart-overlay");
-const closeCart = document.getElementById("close-cart");
-
-cartBtn.onclick = (e) => {
+/* =====================
+   OUVERTURE / FERMETURE
+===================== */
+cartBtn?.addEventListener("click", e => {
     e.preventDefault();
-    cartDrawer.classList.add("open");
-    cartOverlay.classList.add("open");
-    renderMiniCart();
-};
+    openCart();
+});
 
-closeCart.onclick = closeMiniCart;
-cartOverlay.onclick = closeMiniCart;
+closeCart?.addEventListener("click", closeCartDrawer);
+cartOverlay?.addEventListener("click", closeCartDrawer);
 
-function closeMiniCart() {
-    cartDrawer.classList.remove("open");
-    cartOverlay.classList.remove("open");
+function openCart() {
+    cartDrawer.classList.add("active");
+    cartOverlay.classList.add("active");
+    renderCart();
 }
 
-function renderMiniCart() {
+function closeCartDrawer() {
+    cartDrawer.classList.remove("active");
+    cartOverlay.classList.remove("active");
+}
+
+/* =====================
+   RENDER PANIER
+===================== */
+function renderCart() {
     cartItems.innerHTML = "";
     let total = 0;
 
@@ -85,21 +54,54 @@ function renderMiniCart() {
             <div class="cart-item">
                 <img src="${item.image}" alt="${item.name}">
                 <div class="cart-item-info">
-                    <p><strong>${item.name}</strong></p>
-                    <p>${item.price.toFixed(2)} €</p>
+                    <p class="item-name">${item.name}</p>
+                    <p class="item-price">${item.price.toFixed(2)} €</p>
                 </div>
-                <button class="cart-item-remove" onclick="removeFromMiniCart(${index})">✖</button>
+                <button class="cart-item-remove" data-index="${index}">✖</button>
             </div>
         `;
     });
 
     cartTotal.textContent = total.toFixed(2);
     cartCount.textContent = cart.length;
+
+    document.querySelectorAll(".cart-item-remove").forEach(btn => {
+        btn.addEventListener("click", () => removeItem(btn.dataset.index));
+    });
 }
 
-function removeFromMiniCart(index) {
+/* =====================
+   SUPPRESSION
+===================== */
+function removeItem(index) {
     cart.splice(index, 1);
     localStorage.setItem("cart", JSON.stringify(cart));
-    renderMiniCart();
+    renderCart();
 }
 
+/* =====================
+   AJOUT AU PANIER
+===================== */
+document.querySelectorAll(".add-to-cart").forEach(btn => {
+    btn.addEventListener("click", () => {
+
+        const card = btn.closest(".product-card");
+        const image = card.querySelector(".product-image img").src;
+
+        const product = {
+            name: btn.dataset.name,
+            price: parseFloat(btn.dataset.price),
+            image: image
+        };
+
+        cart.push(product);
+        localStorage.setItem("cart", JSON.stringify(cart));
+
+        openCart();
+    });
+});
+
+/* =====================
+   INIT
+===================== */
+renderCart();

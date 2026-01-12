@@ -1,0 +1,314 @@
+/* =====================================================
+   RESET LOCAL PANIER
+===================================================== */
+#cart-drawer,
+#cart-drawer * {
+    box-sizing: border-box;
+}
+
+/* =====================================================
+   BODY
+===================================================== */
+body {
+    overflow-y: auto;
+    background-color: #fff8f2;
+}
+
+/* =====================================================
+   SECTION PANIER (VRAIE SECTION DE PAGE)
+===================================================== */
+#cart-drawer {
+    position: static;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px 0 200px;
+    background-color: #fff8f2;
+}
+
+/* =====================================================
+   CONTENEUR CENTRAL
+===================================================== */
+#cart-drawer .container_1 {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+/* =====================================================
+   COLONNE GAUCHE – IMAGE / SLIDER
+===================================================== */
+.about-image.slider {
+    position: relative;
+    width: 100%;
+    min-height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about-image.slider img {
+    width: 320px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    display: none;
+}
+
+.about-image.slider img.active {
+    display: block;
+}
+
+/* =====================================================
+   COLONNE DROITE – PANIER
+===================================================== */
+.hero-text {
+    width: 100%;
+    max-width: 480px;
+}
+
+/* =====================================================
+   TITRE
+===================================================== */
+.cart-header h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #7a4a2e;
+    margin-bottom: 30px;
+}
+
+/* =====================================================
+   LISTE DES ARTICLES
+===================================================== */
+#cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* =====================================================
+   ARTICLE PANIER
+===================================================== */
+.cart-item {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 18px 22px;
+    display: grid;
+    grid-template-columns: 70px 1fr auto;
+    align-items: center;
+    gap: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.cart-item img {
+    width: 70px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* TEXTE ARTICLE */
+.cart-item-info p {
+    margin: 0;
+    font-size: 15px;
+    color: #4a2d1f;
+}
+
+.cart-item-info p:last-child {
+    font-weight: 700;
+    margin-top: 4px;
+}
+
+/* SUPPRIMER ARTICLE */
+.cart-item-remove {
+    background: none;
+    border: none;
+    font-size: 20px;
+    color: #c0392b;
+    cursor: pointer;
+}
+
+/* =====================================================
+   FOOTER PANIER
+===================================================== */
+.cart-footer {
+    margin-top: 40px;
+    padding-top: 25px;
+    border-top: 1px solid #e6d5c8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-total {
+    font-size: 22px;
+    font-weight: 700;
+    color: #4a2d1f;
+}
+
+/* BOUTON PAYER */
+.cart-footer .btn {
+    background: #7a4a2e;
+    padding: 14px 42px;
+    border-radius: 40px;
+}
+
+.cart-footer .btn a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/* =====================================================
+   FOOTER SITE – SÉCURITÉ
+===================================================== */
+.site-footer {
+    position: relative;
+    margin-top: 120px;
+    clear: both;
+}
+
+/* =====================================================
+   RESPONSIVE MOBILE
+===================================================== */
+@media (max-width: 900px) {
+
+    #cart-drawer {
+        padding: 80px 0 260px;
+    }
+
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 60px;
+        text-align: center;
+    }
+
+    .about-image.slider {
+        min-height: 300px;
+    }
+
+    .about-image.slider img {
+        width: 260px;
+    }
+
+    .hero-text {
+        margin: 0 auto;
+    }
+
+    .cart-footer {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+/* =====================================================
+   TRÈS GRANDS ÉCRANS (≥ 1600px)
+===================================================== */
+@media (min-width: 1600px) {
+
+    #cart-drawer .container_1 {
+        max-width: 1300px;
+    }
+
+    .hero-content {
+        gap: 120px;
+    }
+
+    .about-image.slider img {
+        width: 380px;
+    }
+
+    .hero-text {
+        max-width: 520px;
+    }
+}
+
+/* =====================================================
+   ÉCRANS LARGES (≥ 1200px)
+===================================================== */
+@media (min-width: 1200px) and (max-width: 1599px) {
+
+    #cart-drawer .container_1 {
+        max-width: 1200px;
+    }
+
+    .about-image.slider img {
+        width: 340px;
+    }
+}
+
+/* =====================================================
+   TABLETTES (≤ 1024px)
+===================================================== */
+@media (max-width: 1024px) {
+
+    .hero-content {
+        gap: 50px;
+    }
+
+    .about-image.slider img {
+        width: 280px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+}
+
+/* =====================================================
+   MOBILES (≤ 600px)
+===================================================== */
+@media (max-width: 600px) {
+
+    #cart-drawer {
+        padding: 60px 0 260px;
+    }
+
+    .cart-header h3 {
+        font-size: 26px;
+    }
+
+    .cart-item {
+        grid-template-columns: 60px 1fr auto;
+        padding: 14px 16px;
+    }
+
+    .cart-item img {
+        width: 60px;
+    }
+
+    .cart-total {
+        font-size: 20px;
+    }
+
+    .cart-footer .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* =====================================================
+   TRÈS PETITS MOBILES (≤ 360px)
+===================================================== */
+@media (max-width: 360px) {
+
+    .about-image.slider img {
+        width: 220px;
+    }
+
+    .cart-header h3 {
+        font-size: 22px;
+    }
+
+    .cart-item {
+        gap: 12px;
+    }
+
+    .cart-footer {
+        gap: 16px;
+    }
+}

@@ -303,3 +303,26 @@
     font-size: 16px;
     cursor: pointer;
 }
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.cart-item img {
+    width: 50px;
+    border-radius: 8px;
+}
+
+.cart-item-info {
+    flex: 1;
+}
+
+.item-name {
+    font-weight: 700;
+    color: #4a2d1f;
+}
+
+.item-price {
+    font-size: 14px;
+}
