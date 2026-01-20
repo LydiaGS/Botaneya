@@ -111,3 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
     renderCart();
 
 });
+if (cartOverlay) {
+    cartOverlay.classList.add("show");
+    cartOverlay.addEventListener("click", closeCart);
+}
