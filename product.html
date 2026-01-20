@@ -48,23 +48,37 @@
     <!-- header-nav-->
     <header class="header">
         <div class="container header-content">
+            <div class="logo"><img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" alt="BOTANEYA logo"></div>
             <div class="logo">BOTANEYA</div>
             <nav class="nav">
                 <a href="./index.html">Accueil</a>
                 <a href="./product.html">Produits</a>
                 <a href="./infos.html">Nous connaître</a>
-                <a href="#">Fidélité et parrainage</a>
+                       <a href="./fidélité.html">Fidélité et parrainage</a>
                 <a href="./conatct.html">contact</a>
-                <a href="#">FAQ</a>
+                <a href="./faq.html">FAQ</a>
                 <a href="#"><i class="fa-solid fa-user"></i></a>
-                <a href="#" id="cart-btn">
-                    <span id="cart-count"></span>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </a>
-
+             <a href="#" id="cart-btn">
+    <span id="cart-count"></span>
+    <i class="fa-solid fa-bag-shopping"></i>
+</a>
             </nav>
         </div>
     </header>
+    <div id="cart-overlay"></div>
+
+<div id="cart-drawer">
+    <div class="cart-header">
+        <h3>Mon panier</h3>
+        <button id="close-cart">✖</button>
+    </div>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+        Total : <strong><span id="cart-total">0.00</span> €</strong>
+    </div>
+</div>
     <!-- Section hero-->
     <section class="hero">
         <div class="container_1 hero-content">
@@ -82,9 +96,9 @@
     </section>
     <!-- Section products-->
     <section class="featured-products">
+          <h1 style="display: flex; text-align: center; justify-content: center; align-items: center;"> Boutique de soins botaniques naturels pour cheveux bouclés | BOTANEYA</h1> <br>
         <div class="container">
-
-            <h2 class="section-title">Des formules uniques, naturelles et adaptées à tes cheveux...</h2>
+            <h2 class="section-title"style="font-size: 22px;">Des formules uniques, naturelles et adaptées à tes cheveux...</h2>
 
             <div class="products-grid">
 
@@ -106,11 +120,11 @@
 
                     <div class="rating">★★★★★ <span>(4.8)</span></div>
 
-                    <button class="btn primary add-to-cart" data-name="Bain miraculeux" data-price="39,99€">
-                        AJOUTER AU PANIER
-                    </button>
-
-
+                    <button class="btn primary add-to-cart"
+        data-name="Bain miraculeux"
+        data-price="39.99">
+    AJOUTER AU PANIER
+</button>
                     <!--  <button class="btn disabled">ÉPUISÉ</button>-->
                 </div>
 
@@ -132,10 +146,11 @@
                     </p>
 
                     <div class="rating">★★★★★ <span>(5.0)</span></div>
-
-                    <button class="btn primary add-to-cart" data-name="Goute Routine Boucle" data-price="59,99€">
-                        AJOUTER AU PANIER
-                    </button>
+<button class="btn primary add-to-cart"
+        data-name="Goute Routine Boucle"
+        data-price="59,99">
+    AJOUTER AU PANIER
+</button>
 
                 </div>
 
@@ -154,10 +169,11 @@
 
                     <div class="rating">★★★★★ <span>(4.8)</span></div>
 
-                    <button class="btn primary add-to-cart" data-name="Crème pour Boucles" data-price="29,99">
-                        AJOUTER AU PANIER
-                    </button>
-
+<button class="btn primary add-to-cart"
+        data-name="Crème pour Boucles"
+        data-price="29,99">
+    AJOUTER AU PANIER
+</button>
                 </div>
 
                 <!-- Produit 4 -->
@@ -173,10 +189,11 @@
                     <p class="price">29,99€</p>
 
                     <div class="rating">★★★★★ <span>(4.7)</span></div>
-                    <button class="btn primary add-to-cart" data-name="Masque pour boucles" data-price="29,99€">
-                        AJOUTER AU PANIER
-                    </button>
-
+<button class="btn primary add-to-cart"
+        data-name="Crème pour Boucles"
+        data-price="29,99">
+    AJOUTER AU PANIER
+</button>
                 </div>
 
                 <!-- Produit 5 -->
@@ -192,10 +209,12 @@
 
                     <div class="rating">★★★★★ <span>(4.7)</span></div>
 
-                    <button class="btn primary add-to-cart" data-name="Masque réparateur" data-price="19,99€">
-                        AJOUTER AU PANIER
-                    </button>
-
+                  
+<button class="btn primary add-to-cart"
+        data-name="Masque réparateur"
+        data-price="19,99€">
+    AJOUTER AU PANIER
+</button>
                 </div>
                 <!-- Produit 6 -->
                 <div class="product-card">
@@ -209,15 +228,114 @@
                     <p class="price">9,99€</p>
 
                     <div class="rating">★★★★★ <span>(4.7)</span></div>
-                    <button class="btn primary add-to-cart" data-name="Sérum de finition" data-price="9,99€">
-                        AJOUTER AU PANIER
-                    </button>
-
+                  
+<button class="btn primary add-to-cart"
+        data-name="Sérum de finition"
+        data-price="9,99€">
+    AJOUTER AU PANIER
+</button>
                 </div>
 
             </div>
         </div>
     </section>
+    
+<section class="reviews">
+    <br> <br>
+      <div class="container_1 hero-content">
+
+            <!-- COLONNE GAUCHE : TEXTE -->
+            <div class="hero-text">
+                <h2 style="font-size: 45px;"><strong>Elles/Ils ont adopté BOTANEYA</strong></h2>
+                 <p class="reviews-subtitle"style="font-size: 30px;">
+        Des soins botaniques pensés pour sublimer les boucles naturelles
+    </p>
+            </div>
+            <!-- COLONNE DROITE : IMAGE -->
+            <div class="hero-image">
+                <img class="img_heros" src="./asset/image/sansfontfinale1.png" alt="Produits Botaneya">
+            </div>
+
+        </div>
+   
+        <br> <br><br>
+    <div class="reviews-containers">
+        <!-- COLONNE GAUCHE -->
+        <div class="container">
+            <div class="reviews-grid">
+
+                <div class="review-card">
+                    <div class="review-author"><strong>Sarah M.</strong></div>
+                    <p class="review-text">Boucles bien définies.</p>
+                    <div class="review-stars">★★★</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-author"><strong>Inès K.</strong></div>
+                    <p class="review-text">
+                        Le sérum pas gras, l'odeur juste parfaite et une texture non grasse.
+                    </p>
+                    <div class="review-stars">★★★★</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-author"><strong>Tom R.</strong></div>
+                    <p class="review-text">
+                        Le produit parfait hydrate et facilite le coiffage.
+                    </p>
+                    <div class="review-stars">★★★★</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-author"><strong>Amel B.</strong></div>
+                    <p class="review-text">
+                        Merci pour les explications, la crème bouclante agit dès la première utilisation.
+                    </p>
+                    <div class="review-stars">★★★</div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- COLONNE DROITE -->
+        <div class="container">
+            <div class="reviews-grid">
+
+                <div class="review-card">
+                    <div class="review-author"><strong>Farah D.</strong></div>
+                    <p class="review-text">merci pour l'accueil, le service, résultat magnifique.</p>
+                    <div class="review-stars">★★★★★</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-author"><strong>Justine G.</strong></div>
+                    <p class="review-text">
+                        Juste incroyable avec la première utilisation.
+                    </p>
+                    <div class="review-stars">★★★★</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-author"><strong>laura D.</strong></div>
+                    <p class="review-text">
+                      La texture, l'odeur, La fraîcheur, tout étaient condensé dans ces merveilleux produits.
+                    </p>
+                    <div class="review-stars">★★★★★</div>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-author"><strong>Julianna M.</strong></div>
+                    <p class="review-text">
+                       La texture de la crème bouclante <br> incroyable !
+                    </p>
+                    <div class="review-stars">★★★</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
     <!-- footer-->
     <footer class="site-footer">
         <div class="container footer-grid">
@@ -299,25 +417,6 @@
             </div>
         </section>
     </footer>
-    <div id="cart-overlay"></div>
-
-    <div id="cart-drawer-overlay">
-        <div class="cart-header">
-            <h3>Mon panier</h3>
-            <button id="close-cart">✖</button>
-        </div>
-
-        <div id="cart-items"></div>
-
-        <div class="cart-footer">
-            <p class="cart-total">
-                Total : <strong><span id="cart-total">0.00</span> €</strong>
-            </p>
-            <button class="btn primary">
-                <a href="./panier.html">VOIR LE PANIER</a>
-            </button>
-        </div>
-    </div>
 
     <script src="./javascrpits/product.js"></script>
 </body>

@@ -13,19 +13,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Amaranth:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- CSS-->
+    <link rel="stylesheet" href="./css/fidélité.css">
     <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/navfoot.css">
-    <link rel="stylesheet" href="./css/product.css">
-    <link rel="stylesheet" href="./css/infos.css">
     <link rel="stylesheet" href="./css/acueill.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <title>Contact BOTANEYA – Service Client & Informations</title>
 </head>
 
 <body>
-    <!-- header-top-->
+   <!-- header-top-->
     <header class="header-top">
         <div class="container-top">
             <p>Livraison offerte en France métropolitaine, Belgique, Luxembourg, Allemagne et Espagne dès 100€ d'achat*
@@ -62,92 +59,117 @@
             </nav>
         </div>
     </header>
-    <!-- Section hero-->
-<section class="video-banner">
-  <video
-    class="video-bg"
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="none"
-    poster="./asset/image/packversionfinale.png"
-    aria-hidden="true"
-  >
-    <source src="./asset/vidéo/ANIM 1.mp4" type="video/mp4">
-    Ton navigateur ne supporte pas la vidéo.
-  </video>
+ <section class="hero">
+        <div class="container_1 hero-content">
 
-  <div class="video-overlay"></div>
+            <!-- COLONNE GAUCHE : TEXTE -->
+            <div class="hero-text">
+                <h1 style="display: flex; text-align: center; justify-content: center; align-items: center;"> Fidélité et parrainage</h1>
+        <br>
+            </div>
+            <!-- COLONNE DROITE : IMAGE -->
+            <div class="hero-image">
+                <img class="img_heros" src="./asset/image/sansfontfinale1.png" alt="Produits Botaneya">
+            </div>
 
-  <div class="video-content container">
-    <h1 class="contacter">Nous contacter</h1>
-  </div>
-</section> <br>
- <h1 style="display: flex; text-align: center; justify-content: center; align-items: center;">  Contact BOTANEYA – Service client et informations | BOTANEYA</h1>
- <section class="contact-section">
-  <div class="contact-container">
+        </div>
+    </section> <br>
+    <main class="fidelite-page">
 
-    <!-- COLONNE GAUCHE -->
-    <div class="contact-left">
+  <!-- ===== HERO ===== -->
+  <section class="fidelite-hero">
+    <div class="fidelite-hero-content">
+      <h1>Programme de fidélité & parrainage</h1>
+      <p>
+        Rejoins le club BOTANEYA, cumule des points et gagne
+        des récompenses pour chouchouter tes cheveux.
+      </p>
 
-      <div class="contact-intro">
-        <h2>Une question ? Un besoin ?</h2>
-        <p>
-          Notre équipe BOTANEYA est à votre écoute pour toute question
-          concernant nos soins botaniques, vos commandes ou nos engagements.
-        </p>
+      <div class="fidelite-buttons">
+        <a href="#" class="btn-outline">Connexion</a>
+        <a href="#" class="btn-outline">Inscription</a>
       </div>
-
-      <div class="contact-infos">
-        <h2>Nos coordonnées</h2>
-
-  <ul class="infos-list">
-  <li>
-    <i class="fa-brands fa-instagram"></i>
-    <a href="https://www.instagram.com/botaneya" target="_blank">@botaneya</a>
-  </li>
-
-  <li>
-    <i class="fa-solid fa-envelope"></i>
-    <a href="mailto:botaneya@hotmail.com">botaneya@hotmail.com</a>
-  </li>
-
-  <li>
-    <i class="fa-solid fa-phone"></i>
-    <a href="tel:0484471439">04 84 47 14 39</a>
-  </li>
-</ul>
-
-      </div>
-
     </div>
-    <!-- COLONNE DROITE -->
-    <div class="contact-form">
-  <h1>Contactez-moi</h1>
-  <p>Je réponds généralement sous 24–48h.”<br><br>Si urgent, tu peux aussi appeler ou envoyer un message WhatsApp.”<br><br>“Je suis disponible entre 09h30-12h00 et 13h00-16h30” </p>
+  </section>
 
-  <form id="contactForm">
-    <input type="text" name="name" placeholder="Nom complet" required>
-    <input type="email" name="email" placeholder="Adresse email" required>
-    <input type="text" name="subject" placeholder="Sujet">
-    <textarea name="message" placeholder="Votre message..." required></textarea>
+  <!-- ===== COMMENT ÇA MARCHE ===== -->
+  <section class="fidelite-steps">
+    <div class="step">
+      <span>1</span>
+      <h3>Crée ton compte</h3>
+      <p>Inscris-toi gratuitement au programme BOTANEYA.</p>
+    </div>
 
-    <!-- Honeypot anti-bot -->
-    <input type="text" name="website" style="display:none">
+    <div class="step">
+      <span>2</span>
+      <h3>Cumule des points</h3>
+      <p>Achats, actions, partages… chaque geste compte.</p>
+    </div>
 
-    <button type="submit" class="btn-primary">Envoyer</button>
+    <div class="step">
+      <span>3</span>
+      <h3>Gagne des cadeaux</h3>
+      <p>Échange tes points contre des réductions.</p>
+    </div>
+  </section>
 
-    <p id="successMsg" style="display:none;">
-      ✅ Message envoyé avec succès !
-    </p>
-  </form>
-</div>
+  <!-- ===== GAGNER DES POINTS ===== -->
+  <section class="fidelite-points">
+    <h2>Comment gagner des points ?</h2>
 
-</div>
+    <div class="points-grid">
+      <div class="point-card"><strong>1 point</strong><span> Par euro dépensé</span></div>
+      <div class="point-card"><strong>150 points</strong><span> Avant / après en photo</span></div>
+      <div class="point-card"><strong>100 points</strong><span> Avis produit</span></div>
+      <div class="point-card"><strong>30 points</strong><span> Anniversaire</span></div>
+      <div class="point-card"><strong>200 points</strong><span> Post Instagram</span></div>
+      <div class="point-card"><strong>300 points</strong><span> Vidéo TikTok</span></div>
+    </div>
+  </section>
 
-  </div>
-</section>
+  <!-- ===== PARRAINAGE ===== -->
+  <section class="fidelite-parrainage">
+    <div class="parrainage-box">
+      <h2>Parraine une amie</h2>
+      <p>
+        Offre <strong>10€</strong> à une amie et reçois
+        <strong>10€</strong> de réduction pour toi.
+      </p>
+
+      <form class="parrainage-form">
+        <input type="email" placeholder="Ton adresse email" required>
+        <button class="btn-outline">Parrainer</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== UTILISER SES POINTS ===== -->
+  <section class="fidelite-rewards">
+    <h2>Comment utiliser vos points ?</h2>
+
+    <div class="rewards-grid">
+      <div class="reward-card">
+        <h4>Bon d’achat 5€</h4>
+        <span>500 points</span>
+        <button class="btn-outline">Échanger</button>
+      </div>
+
+      <div class="reward-card">
+        <h4>Bon d’achat 10€</h4>
+        <span>1000 points</span>
+        <button class="btn-outline">Échanger</button>
+      </div>
+
+      <div class="reward-card">
+        <h4>Bon d’achat 15€</h4>
+        <span>1500 points</span>
+        <button class="btn-outline">Échanger</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
     <!-- footer-->
     <footer class="site-footer">
         <div class="container footer-grid">
@@ -244,7 +266,7 @@
             <button class="btn primary">VOIR LE PANIER</button>
         </div>
     </div>
-    <script src="./javascrpits/contact.js" defer></script>
+    <script src="./javascrpits/contact.js"></script>
     <script src="./javascrpits/scripts.js"></script>
     <script src="./javascrpits/product.js"></script>
 </body>

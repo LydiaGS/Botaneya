@@ -1,0 +1,154 @@
+/* ===== PAGE FIDELITE ===== */
+
+.fidelite-page {
+  font-family: inherit;
+}
+
+/* HERO */
+.fidelite-hero {
+  background: var(--accent-2);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.fidelite-hero h1 {
+  font-size: 2.6rem;
+  color: var(--primary);
+}
+
+.fidelite-hero p {
+  max-width: 600px;
+  margin: 20px auto 40px;
+}
+
+.fidelite-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+/* STEPS */
+.fidelite-steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1000px;
+  margin: 80px auto;
+  text-align: center;
+}
+
+.step span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background: var(--primary);
+  color: white;
+  border-radius: 50%;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+
+/* POINTS */
+.fidelite-points {
+  background: var(--secondary);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.points-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto 0;
+}
+
+.point-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* PARRAINAGE */
+.fidelite-parrainage {
+  background: var(--accent-3);
+  padding: 100px 20px;
+}
+
+.parrainage-box {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 40px;
+  border-radius: 25px;
+  text-align: center;
+}
+
+/* REWARDS */
+.fidelite-rewards {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.rewards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 40px auto 0;
+}
+
+.reward-card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .fidelite-steps,
+  .rewards-grid {
+    grid-template-columns: 1fr;
+  }
+}
+/* ===== BUTTON OUTLINE BOTANEYA ===== */
+
+.btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 34px;
+  border-radius: 999px;
+  border: 1.8px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  width: 95px;
+  height: 45px;
+}
+
+/* HOVER */
+.btn-outline:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+/* ACTIVE */
+.btn-outline:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* FOCUS (ACCESSIBILITÉ) */
+.btn-outline:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(123, 73, 49, 0.35);
+}

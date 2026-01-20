@@ -1,0 +1,90 @@
+/* ===== FAQ PAGE ===== */
+
+.faq-page {
+  max-width: 900px;
+  margin: 80px auto;
+  padding: 0 20px;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary);
+  margin-bottom: 60px;
+}
+
+.faq-section {
+  margin-bottom: 70px;
+}
+
+.faq-section h2 {
+  font-size: 1.8rem;
+  color: var(--primary);
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+/* ===== FAQ ITEMS ===== */
+
+.faq-item {
+  border-bottom: 1px solid var(--accent-2);
+}
+
+.faq-question {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 20px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #222;
+  text-align: left;
+  cursor: pointer;
+  position: relative;
+}
+
+.faq-question::after {
+  content: "▾";
+  position: absolute;
+  right: 10px;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+  transform: rotate(180deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.faq-answer p {
+  padding: 0 10px 20px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+}
+
+/* ===== CTA ===== */
+
+.faq-cta {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.faq-cta h2 {
+  color: var(--primary);
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.faq-cta p {
+  margin-bottom: 25px;
+  color: #555;
+}

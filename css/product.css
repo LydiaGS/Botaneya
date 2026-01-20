@@ -326,3 +326,269 @@
 .item-price {
     font-size: 14px;
 }
+#cart-drawer {
+    position: fixed;
+    top: 0;
+    right: -380px;
+    width: 360px;
+    height: 100vh;
+    background: var(--secondary);
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+#cart-drawer.open {
+    right: 0;
+}
+
+#cart-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+    z-index: 999;
+}
+
+#cart-overlay.show {
+    opacity: 1;
+    z-index: 1;
+    visibility: visible;
+}
+/* ===== CART STRUCTURE ===== */
+#cart-drawer {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Amaranth', sans-serif;
+}
+
+/* ===== HEADER ===== */
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: var(--accent-4);
+    color: var(--primary);
+    border-bottom: 1px solid var(--accent-3);
+}
+
+.cart-header h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+#close-cart {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ===== ITEMS ===== */
+#cart-items {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* ===== FOOTER ===== */
+.cart-footer {
+    padding: 20px;
+    border-top: 1px solid var(--accent-3);
+    background: #fff;
+}
+
+.cart-footer strong {
+    font-size: 18px;
+}
+/* =========================
+   DÉSACTIVER LES HOVER DANS LE PANIER
+========================= */
+#cart-drawer *,
+#cart-drawer *:hover {
+    opacity: 1 !important;
+    transform: none !important;
+}
+#cart-drawer {
+    pointer-events: auto;
+}
+
+.products {
+    pointer-events: auto;
+}
+/* ===============================
+   SECTION AVIS CLIENTS
+================================ */
+.reviews {
+    background-color: var(--accent-4);
+    padding: 100px 0;
+    text-align: center;
+}
+
+.reviews-title {
+    font-size: 32px;
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-family: 'Amaranth', sans-serif;
+}
+
+.reviews-subtitle {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 50px;
+}
+
+/* GRID */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+/* CARD */
+.review-card {
+    background: var(--secondary);
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-6px);
+}
+
+/* STARS */
+.review-stars {
+    color: #f5b301;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* TEXT */
+.review-text {
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+/* AUTHOR */
+.review-author strong {
+    display: block;
+    color: var(--primary);
+    font-size: 15px;
+}
+
+.review-author span {
+    font-size: 13px;
+    color: #777;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 1024px) {
+    .reviews-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .reviews {
+        padding: 80px 0;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews-title {
+        font-size: 26px;
+    }
+}
+/* ===============================
+   AVIS – DISPOSITION ORGANIQUE
+================================ */
+
+.reviews {
+    background-color: var(--accent-4);
+    padding: 120px 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.reviews-grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(260px, 1fr));
+    gap: 80px 120px;
+    margin-top: 80px;
+    justify-items: center;
+}
+
+/* CARD */
+.review-card {
+    background: var(--secondary);
+    border-radius: 20px;
+    padding: 30px;
+    max-width: 320px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease;
+}
+
+/* DÉCALAGES & ROTATIONS */
+.review-card:nth-child(1) {
+    transform: rotate(-4deg) translateY(20px);
+}
+
+.review-card:nth-child(2) {
+    transform: rotate(3deg) translateY(-10px);
+}
+
+.review-card:nth-child(3) {
+    transform: rotate(-2deg) translateX(-20px);
+}
+
+.review-card:nth-child(4) {
+    transform: rotate(4deg) translateX(20px);
+}
+
+/* Hover doux */
+.review-card:hover {
+    transform: rotate(0deg) translate(0, -6px);
+}
+
+/* TEXT */
+.review-author strong {
+    color: var(--primary);
+    font-size: 16px;
+}
+
+.review-text {
+    margin: 15px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.review-stars {
+    color: #f5b301;
+    font-size: 16px;
+}
+
+/* ===============================
+   RESPONSIVE
+================================ */
+@media (max-width: 768px) {
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .review-card {
+        transform: none !important;
+    }
+}

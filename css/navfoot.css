@@ -480,3 +480,32 @@ font-size: 25px;
     padding: 20px;
     border-top: 1px solid #eee;
 }
+/*logo Images*/
+/* LOGO WRAPPER */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* IMAGE LOGO */
+.logo img {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.9;
+}
+.logo img:hover {
+    height: 55px;
+    width: auto;
+    object-fit: contain;
+    opacity: 0.9;
+}
+/* LOGO TEXTE */
+.logo-text {
+    font-family: 'Amaranth', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--primary);
+    letter-spacing: 2px;
+}
