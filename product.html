@@ -28,29 +28,13 @@
 
 <body>
 
-    <!-- header-top-->
-    <header class="header-top">
-        <div class="container-top">
-            <p>Livraison offerte en France métropolitaine, Belgique, Luxembourg, Allemagne et Espagne dès 100€ d'achat*
-            </p>
-            <div class="icone-top">
-                <a href="https://www.instagram.com/tonprofil" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.tiktok.com/@tonprofil" target="_blank" rel="noopener">
-                    <i class="fa-brands fa-tiktok"></i>
-                </a>
-            </div>
-
-
-        </div>
-    </header>
     <!-- header-nav-->
     <header class="header">
         <div class="container header-content">
-            <div class="logo"><img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" alt="BOTANEYA logo"></div>
+                <div class="logo"><img src="./asset/image/LOGO COL1_LOGO MARK COL MAIN 2.png" alt="BOTANEYA logo">
+            </div>
             <div class="logo">BOTANEYA</div>
-            <nav class="nav">
+      <nav class="nav">
                 <a href="./index.html">Accueil</a>
                 <a href="./product.html">Produits</a>
                 <a href="./infos.html">Nous connaître</a>
@@ -64,29 +48,14 @@
                 </a>
             </nav>
         </div>
+        <div id="cart-overlay"></div>
+
+        <div id="cart-drawer">
+            <div class="cart-header">
+                <h3>Mon panier</h3>
+                <button id="close-cart">✖</button>
+            </div>
     </header>
-<div id="cart-overlay"></div>
-
-<div id="cart-drawer">
-    <div class="cart-header">
-        <h3>Mon panier</h3>
-        <button id="close-cart">✖</button>
-    </div>
-
-    <div id="cart-items"></div>
-
-    <div class="cart-footer">
-       <div class="cart-total">
-        Total : <strong><span id="cart-total">0.00</span> €</strong>
-    </div>
-
-    <button id="pay-btn" class="btn primary cart-pay-btn">
-        PAYER
-    </button>
-    </div>
-</div>
-
-
     <!-- Section hero-->
     <section class="hero">
         <div class="container_1 hero-content">
@@ -442,6 +411,25 @@
             </div>
         </section>
     </footer>
+    <div id="cart-overlay"></div>
+</div>
+
+<div id="cart-drawer">
+    <div class="cart-header">
+        <h3>Mon panier</h3>
+        <button id="close-cart">✖</button>
+    </div>
+
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+       <div class="cart-total">
+        Total : <strong><span id="cart-total">0.00</span> €</strong>
+    </div>
+
+    <button id="pay-btn" class="btn primary cart-pay-btn">
+        PAYER
+    </button>
     <script src="./javascrpits/product.js"></script>
 </body>
 
