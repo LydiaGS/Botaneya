@@ -1,0 +1,119 @@
+body{
+    background-color: var(--secondary);
+}
+.hair-types-section {
+  background-color: var(--secondary);
+  padding: 70px 20px;
+}
+
+.hair-types-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.hair-types-section h2 {
+  text-align: center;
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.hair-types-section h3 {
+  color: var(--primary);
+  font-size: 1.4rem;
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+.hair-types-section p {
+  color: var(--primary);
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 800px;
+}
+.hair-cards {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.hair-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 25px 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.09);
+  transition: transform 0.3s ease;
+}
+
+.hair-card:hover {
+  transform: translateY(-6px);
+}
+
+.hair-card h4 {
+  color: var(--primary);
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.hair-card p {
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+}
+.hair-card.highlight {
+  background: linear-gradient(
+    135deg,
+    var(--primary),
+    var(--accent-1)
+  );
+  color: var(--secondary);
+}
+
+.hair-card.highlight h4,
+.hair-card.highlight p {
+  color: var(--secondary);
+  text-align: center;
+}
+.hair-card .btn.primary {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px 0;
+  border-radius: 30px;
+  background-color: var(--secondary);
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.hair-card .btn.primary a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.hair-card .btn.primary:hover {
+  background-color: var(--accent-2);
+}
+
+.hair-card .btn.primary:hover a {
+  color: var(--hover);
+}
+@media (max-width: 1024px) {
+  .hair-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .hair-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .hair-types-section h2 {
+    font-size: 1.6rem;
+  }
+
+  .hair-types-section h3 {
+    font-size: 1.2rem;
+  }
+}
