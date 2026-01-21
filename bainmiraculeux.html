@@ -50,9 +50,9 @@
 
                 <!-- COLONNE GAUCHE : MINI IMAGES -->
                 <div class="hero-thumbs">
-                    <img src="./asset/image/bainmiraculeuxfleur1.png" alt="">
-                    <img src="./asset/image/bainmiraculeuxdoublecoller.png" alt="">
-                    <img src="./asset/image/bainsansfont.png" alt="">
+                    <img class="img-infos" src="./asset/image/bainmiraculeuxfleur1.png" alt="">
+                    <img class="img-infos" src="./asset/image/bainmiraculeuxdoublecoller.png" alt="">
+                    <img class="img-infos" src="./asset/image/bainsansfont.png" alt="">
                 </div>
                 <!-- COLONNE GAUCHE : TEXTE -->
                 <div class="hero-text">
@@ -78,8 +78,11 @@
                         </li>
                     </p>
 
-
-                    <a href="./product.html" class="btn-primary">Ajouter au panier</a>
+<button class="btn primary add-to-cart"
+        data-name="Bain miraculeux"
+        data-price="39.99">
+    AJOUTER AU PANIER
+</button>
                 </div>
 
                 <!-- COLONNE DROITE : IMAGE -->
@@ -94,69 +97,34 @@
 
             </div>
     </section>
-    <br>
-   <section class="hair-types-section">
+     <section class="routine-advice">
   <div class="container">
 
-    <!-- TITRE PRINCIPAL -->
-    <h2>Comprendre les types de cheveux (2A à 4C)</h2>
+    <h2>Une routine adaptée à chaque type de cheveux</h2>
 
-    <!-- INTRO -->
     <p>
-      Chaque type de cheveux a des besoins spécifiques. Identifier le vôtre permet
-      d’adopter la routine BOTANEYA la plus adaptée.
-    </p>
- <br>
-    <!-- POURQUOI LE SÉRUM -->
-    <h3>Pourquoi utiliser un sérum pour les cheveux 4A à 4C ?</h3>
-    <p>
-      Les cheveux crépus sont naturellement plus secs et perdent rapidement
-      l’hydratation. Le sérum aide à nourrir, protéger et maintenir l’hydratation
-      au cœur de la fibre capillaire.
+      Pour tous les types de cheveux, de <strong>2A à 4C</strong>, adopter une routine adaptée
+      est essentiel pour préserver la santé et la beauté de la fibre capillaire.
     </p>
 
-    <!-- CARDS TYPES DE CHEVEUX -->
-    <div class="hair-cards">
+    <p>
+    Pour les cheveux <strong>4A à 4C</strong>, l’utilisation du <strong>sérum BOTANEYA</strong>
+est <strong>indispensable</strong> : sans le sérum, les autres soins n’offrent pas
+le même niveau d’efficacité ni de protection.
 
-      <div class="hair-card">
-        <h4>Type 2 – Ondulés</h4>
-        <p><strong>2A</strong> : légèrement ondulés, presque lisses</p>
-        <p><strong>2B</strong> : ondulations plus visibles</p>
-        <p><strong>2C</strong> : ondulations épaisses, parfois frisées</p>
-      </div>
+    </p>
 
-      <div class="hair-card">
-        <h4>Type 3 – Bouclés</h4>
-        <p><strong>3A</strong> : grosses boucles</p>
-        <p><strong>3B</strong> : boucles bien définies</p>
-        <p><strong>3C</strong> : boucles serrées</p>
-      </div>
-
-      <div class="hair-card">
-        <h4>Type 4 – Crépus</h4>
-        <p><strong>4A</strong> : boucles très serrées mais visibles</p>
-        <p><strong>4B</strong> : cheveux crépus en forme de Z</p>
-        <p><strong>4C</strong> : très serrés, plus fragiles, peu de définition</p>
-      </div>
-
-     <!-- RÉSUMÉ / ROUTINE -->
-<div class="hair-card highlight">
-  <h4>Routine BOTANEYA</h4>
-  <p>2A à 4A : le produit seul suffit</p>
-  <p>4A à 4C : ajouter le sérum</p>
-  <button class="btn primary add-to-cart"
-        data-name="Sérum de finition"
-        data-price="34,99€">
-     <a href="./product.html">Ajouter le Sérum </a>
-</button>
-</div>
-
-    </div>
+    <p>
+      Identifier son type de cheveux est essentiel pour choisir les soins adaptés
+      et optimiser les résultats de votre routine capillaire.
+    </p>
+<br>
+    <a href="./utilisation.html" class="btn primary">
+      Identifier Mon type de de cheveux
+    </a>
 
   </div>
 </section>
-
-<br>
     <section class="engagements">
         <div class="container engagements-grid">
 
@@ -180,6 +148,7 @@
             </div>
         </div>
     </section>
+    
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",

@@ -50,9 +50,9 @@
 
                 <!-- COLONNE GAUCHE : MINI IMAGES -->
                 <div class="hero-thumbs">
-                    <img src="./asset/image/crèmebouclefleur1.png" alt="">
-                    <img src="./asset/image/cremedebouclecollerdeux.png" alt="">
-                    <img src="./asset/image/cremebouclesansfont.png" alt="">
+                    <img class="img-infos" src="./asset/image/crèmebouclefleur1.png" alt="">
+                    <img class="img-infos" src="./asset/image/cremedebouclecollerdeux.png" alt="">
+                    <img class="img-infos" src="./asset/image/cremebouclesansfont.png" alt="">
                 </div>
                 <!-- COLONNE GAUCHE : TEXTE -->
                 <div class="hero-text">
@@ -79,7 +79,11 @@
                     </p>
 
 
-                    <a href="./product.html" class="btn-primary">Ajouter au panier</a>
+                    <button class="btn primary add-to-cart"
+        data-name="Crème pour Boucles"
+        data-price="29,99">
+    AJOUTER AU PANIER
+</button>
                 </div>
 
 
@@ -95,70 +99,34 @@
 
             </div>
     </section>
-     <br>
-<section class="hair-types-section">
+     <section class="routine-advice">
   <div class="container">
 
-    <!-- TITRE PRINCIPAL -->
-    <h2>Comprendre les types de cheveux (2A à 4C)</h2>
+    <h2>Une routine adaptée à chaque type de cheveux</h2>
 
-    <!-- INTRO -->
     <p>
-      Chaque type de cheveux a des besoins spécifiques. Identifier le vôtre permet
-      d’adopter la routine BOTANEYA la plus adaptée.
-    </p>
- <br>
-    <!-- POURQUOI LE SÉRUM -->
-    <h3>Pourquoi utiliser un sérum pour les cheveux 4A à 4C ?</h3>
-    <p>
-      Les cheveux crépus sont naturellement plus secs et perdent rapidement
-      l’hydratation. Le sérum aide à nourrir, protéger et maintenir l’hydratation
-      au cœur de la fibre capillaire.
+      Pour tous les types de cheveux, de <strong>2A à 4C</strong>, adopter une routine adaptée
+      est essentiel pour préserver la santé et la beauté de la fibre capillaire.
     </p>
 
-    <!-- CARDS TYPES DE CHEVEUX -->
-    <div class="hair-cards">
+    <p>
+    Pour les cheveux <strong>4A à 4C</strong>, l’utilisation du <strong>sérum BOTANEYA</strong>
+est <strong>indispensable</strong> : sans le sérum, les autres soins n’offrent pas
+le même niveau d’efficacité ni de protection.
 
-      <div class="hair-card">
-        <h4>Type 2 – Ondulés</h4>
-        <p><strong>2A</strong> : légèrement ondulés, presque lisses</p>
-        <p><strong>2B</strong> : ondulations plus visibles</p>
-        <p><strong>2C</strong> : ondulations épaisses, parfois frisées</p>
-      </div>
+    </p>
 
-      <div class="hair-card">
-        <h4>Type 3 – Bouclés</h4>
-        <p><strong>3A</strong> : grosses boucles</p>
-        <p><strong>3B</strong> : boucles bien définies</p>
-        <p><strong>3C</strong> : boucles serrées</p>
-      </div>
-
-      <div class="hair-card">
-        <h4>Type 4 – Crépus</h4>
-        <p><strong>4A</strong> : boucles très serrées mais visibles</p>
-        <p><strong>4B</strong> : cheveux crépus en forme de Z</p>
-        <p><strong>4C</strong> : très serrés, plus fragiles, peu de définition</p>
-      </div>
-
-      <!-- RÉSUMÉ / ROUTINE -->
-      <!-- RÉSUMÉ / ROUTINE -->
-<div class="hair-card highlight">
-  <h4>Routine BOTANEYA</h4>
-  <p>2A à 4A : le produit seul suffit</p>
-  <p>4A à 4C : ajouter le sérum</p>
-    <button class="btn primary add-to-cart"
-        data-name="Sérum de finition"
-        data-price="34,99€">
-     <a href="./product.html">Ajouter le Sérum </a>
-</button>
-</div>
-
-
-    </div>
+    <p>
+      Identifier son type de cheveux est essentiel pour choisir les soins adaptés
+      et optimiser les résultats de votre routine capillaire.
+    </p>
+<br>
+    <a href="./utilisation.html" class="btn primary">
+      Identifier Mon type de de cheveux
+    </a>
 
   </div>
 </section>
-<br>
     <section class="engagements">
         <div class="container engagements-grid">
 
@@ -182,6 +150,105 @@
             </div>
         </div>
     </section>
+      <!-- footer-->
+    <footer class="site-footer">
+        <div class="container footer-grid">
+
+            <!-- Colonne 1 -->
+            <div class="footer-col">
+                <h4>Botaneya</h4>
+                <ul>
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#">Nos Produits</a></li>
+                    <li><a href="#">Nous connaître</a></li>
+                    <li><a href="#">Fidélité et parrainage</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonne 2 -->
+            <div class="footer-col">
+                <h4>INFORMATIONS LÉGALES</h4>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">CGV</a></li>
+                    <li><a href="#">Protection des données personnelles</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonne 3 -->
+            <div class="footer-col">
+                <h4>REJOINS-NOUS !</h4>
+                <div class="footer-socials">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+            </div>
+
+            <!-- Colonne 4 -->
+            <div class="footer-col newsletter">
+                <h4>NEWSLETTER</h4>
+                <p>
+                    Tu veux connaître toute notre actualité, recevoir
+                    les dernières promos ?
+                </p>
+
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Renseigne ton email" required>
+                    <button type="submit">S'ABONNER</button>
+                </form>
+            </div>
+
+        </div>
+        <br> <br>
+        <section class="shipping-bar">
+            <div class="container shipping-text">
+                <p>
+                    <strong>*Livraison offerte</strong> en France métropolitaine
+                    (Colissimo - Mondial Relay Point retrait), Belgique (Mondial Relay Domicile + Point retrait),
+                    Luxembourg (Mondial Relay Point retrait), Allemagne (Mondial Relay Domicile)
+                    et Espagne (Mondial Relay Point retrait) dès 100€ d'achat.
+                </p>
+            </div>
+
+            <div class="payment-bar">
+                <div class="container payment-content">
+
+                    <div class="brand">
+                        <div class="gift-icon">🎁</div>
+                        <span>Botanical Beauty</span>
+                    </div>
+
+                    <div class="payment-icons">
+                        <i class="pf pf-apple-pay"></i>
+                        <i class="pf pf-cb"></i>
+                        <i class="pf pf-mastercard"></i>
+                        <i class="pf pf-paypal"></i>
+                        <i class="pf pf-visa"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <div id="cart-overlay"></div>
+
+    <div id="cart-drawer">
+        <div class="cart-header">
+            <h3>Mon panier</h3>
+            <button id="close-cart">✖</button>
+        </div>
+
+        <div id="cart-items"></div>
+
+        <div class="cart-footer">
+            <div class="cart-total">
+                Total : <strong><span id="cart-total">0.00</span> €</strong>
+            </div>
+
+            <button id="pay-btn" class="btn primary cart-pay-btn">
+                PAYER
+            </button>s
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
