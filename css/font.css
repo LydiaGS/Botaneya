@@ -14,3 +14,11 @@
     --accent-4: #FBEBD4;
     --hover:black;
 }
+.step-icon {
+    font-size: 32px;
+    color: #000;
+}
+.separator {
+    font-size: 28px;
+    color: #000;
+}

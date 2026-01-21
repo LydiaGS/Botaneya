@@ -910,4 +910,52 @@ color: var(--primary);
         height: 220px;
     }
 }
+.botaneya-benefits {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: var(--accent-4);
+}
 
+.botaneya-benefits h2 {
+  font-size: 2rem;
+  margin-bottom: 2.5rem;
+  color:var(--accent-5s);
+}
+
+.benefits-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.benefit-bubble {
+  width: 140px;
+  height: 140px;
+  background:var(--secondary);
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.benefit-bubble:hover {
+  transform: translateY(-8px);
+}
+
+.benefit-bubble i {
+  font-size: 2rem;
+  color: #6b8f71; /* vert naturel */
+  margin-bottom: 0.6rem;
+}
+
+.benefit-bubble span {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  padding: 0 0.5rem;
+}

@@ -62,6 +62,7 @@
             </nav>
         </div>
     </header>
+    
     <!-- Section hero-->
 <section class="video-banner">
   <video
@@ -115,7 +116,7 @@
 
   <li>
     <i class="fa-solid fa-phone"></i>
-    <a href="tel:0484471439">04 84 47 14 39</a>
+    <a href="tel:0484471439">+32 484 471 439</a>
   </li>
 </ul>
 
@@ -125,7 +126,7 @@
     <!-- COLONNE DROITE -->
     <div class="contact-form">
   <h1>Contactez-moi</h1>
-  <p>Je réponds généralement sous 24–48h.”<br><br>Si urgent, tu peux aussi appeler ou envoyer un message WhatsApp.”<br><br>“Je suis disponible entre 09h30-12h00 et 13h00-16h30” </p>
+  <p>Je réponds généralement sous 24–48h.”<br><br>Si urgent, tu peux aussi appeler ou envoyer un message WhatsApp.”<br><br>“Je suis disponible du lundi au samedi de 09h à 18h"</p>
 
   <form id="contactForm">
     <input type="text" name="name" placeholder="Nom complet" required>
@@ -229,20 +230,24 @@
             </div>
         </section>
     </footer>
-    <div id="cart-drawer">
-        <div class="cart-header">
-            <h3>Mon panier</h3>
-            <button id="close-cart">✖</button>
-        </div>
+<div id="cart-overlay"></div>
 
-        <div id="cart-items"></div>
+<div id="cart-drawer">
+    <div class="cart-header">
+        <h3>Mon panier</h3>
+        <button id="close-cart">✖</button>
+    </div>
 
-        <div class="cart-footer">
-            <p class="cart-total">
-                Total : <strong><span id="cart-total">0.00</span> €</strong>
-            </p>
-            <button class="btn primary">VOIR LE PANIER</button>
-        </div>
+    <div id="cart-items"></div>
+
+    <div class="cart-footer">
+       <div class="cart-total">
+        Total : <strong><span id="cart-total">0.00</span> €</strong>
+    </div>
+
+    <button id="pay-btn" class="btn primary cart-pay-btn">
+        PAYER
+    </button>
     </div>
     <script src="./javascrpits/contact.js" defer></script>
     <script src="./javascrpits/scripts.js"></script>

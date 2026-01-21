@@ -43,7 +43,7 @@
 </head>
 
 <body>
-  <!-- header-top-->
+    <!-- header-top-->
     <header class="header-top">
         <div class="container-top">
             <p>Livraison offerte en France métropolitaine, Belgique, Luxembourg, Allemagne et Espagne dès 100€ d'achat*
@@ -63,66 +63,78 @@
     <!-- header-nav-->
     <header class="header">
         <div class="container header-content">
-            <div class="logo"><img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" alt="BOTANEYA logo"></div>
+            <div class="logo"><img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" alt="BOTANEYA logo">
+            </div>
             <div class="logo">BOTANEYA</div>
             <nav class="nav">
                 <a href="./index.html">Accueil</a>
                 <a href="./product.html">Produits</a>
                 <a href="./infos.html">Nous connaître</a>
-                       <a href="./fidélité.html">Fidélité et parrainage</a>
+                <a href="./fidélité.html">Fidélité et parrainage</a>
                 <a href="./conatct.html">contact</a>
                 <a href="./faq.html">FAQ</a>
                 <a href="#"><i class="fa-solid fa-user"></i></a>
-             <a href="#" id="cart-btn">
-    <span id="cart-count"></span>
-    <i class="fa-solid fa-bag-shopping"></i>
-</a>
+                <a href="#" id="cart-btn">
+                    <span id="cart-count"></span>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
             </nav>
         </div>
     </header>
-<section class="video-banner">
-  <video
-    class="video-bg"
-    autoplay
-    muted
-    loop
-    playsinline
-    preload="none"
-    poster="./asset/image/packversionfinale.png"
-  >
-    <source src="./asset/vidéo/ANIM 1.mp4" type="video/mp4">
-    Ton navigateur ne supporte pas la vidéo.
-  </video>
 
-  <div class="video-overlay"></div>
+    <section class="video-banner">
+        <video class="video-bg" autoplay muted loop playsinline preload="none"
+            poster="./asset/image/packversionfinale.png">
+            <source src="./asset/vidéo/ANIM 1.mp4" type="video/mp4">
+            Ton navigateur ne supporte pas la vidéo.
+        </video>
 
-  <div class="video-content container">
-    <a href="./product.html" class="btn-primary">Découvrir</a>
-  </div>
-</section>
-  <h1 style="display: flex; text-align: center; justify-content: center; align-items: center;">Soins botaniques naturels pour cheveux bouclés | BOTANEYA</h1>
-    <section class="engagements">
-        <div class="container engagements-grid">
-            <div class="engagement-item">
-                <h2>PRODUITS NATURELS <strong> 🌿</strong></h2>
-                <p>Des actifs purs et puissants, sans compromis sur la qualité.</p>
+        <div class="video-overlay"></div>
+
+        <div class="video-content container">
+            <a href="./product.html" class="btn-primary">Découvrir</a>
+        </div>
+    </section>
+    <br>
+    <h1 style="display: flex; text-align: center; justify-content: center; align-items: center;">Soins naturels pour
+        cheveux bouclés 100% végan et cruelty-free | BOTANEYA</h1>
+    <br>
+    <section class="botaneya-benefits">
+        <h2>Pourquoi choisir BOTANEYA ?</h2>
+
+        <div class="benefits-wrapper">
+            <div class="benefit-bubble">
+                <i class="fa-solid fa-leaf" style="color: #7B4931;"></i>
+                <span>Naturel</span>
             </div>
 
-            <div class="separator"></div>
-
-            <div class="engagement-item">
-                <h2>FAIT EN FRance <strong> 🇫🇷</strong></h2>
-                <p>Conçu et fabriqué en France avec un savoir-faire expert.</p>
+            <div class="benefit-bubble">
+                <i class="fa-solid fa-seedling" style="color: #7B4931;"></i>
+                <span>Végan</span>
             </div>
 
-            <div class="separator"></div>
+            <div class="benefit-bubble">
+                <i class="fa-solid fa-paw" style="color: #7B4931;"></i>
+                <span>Cruelty-free</span>
+            </div>
 
-            <div class="engagement-item">
-                <h2>FORMULE UNIQUE <strong> ✨</strong></h2>
-                <p>Des compositions exclusives et réfléchies pour des cheveux sublimés et fortifiés.</p>
+            <div class="benefit-bubble">
+                <i class="fa-solid fa-flask" style="color: #7B4931;"></i>
+                <span>Clean beauty</span>
+            </div>
+
+            <div class="benefit-bubble">
+                <i class="fa-solid fa-location-dot" style="color: #7B4931;"></i>
+                <span>Fabriqué en France</span>
+            </div>
+
+            <div class="benefit-bubble">
+                <i class="fa-solid fa-wand-magic-sparkles" style="color: #7B4931;"></i>
+                <span>Boucles sublimées</span>
             </div>
         </div>
     </section>
+
     <!-- Section products-->
     <section class="featured-products">
         <div class="container">
@@ -190,10 +202,9 @@
             <div class="about-text">
                 <h2>Apprendre à nous <br>connaître !</h2>
                 <p>
-                    Derrière Botaneya, il y a une femme, une histoire, et une passion pour
-                    les cheveux bouclés. Nos soins, on les a pensés comme toi : exigeants,
-                    naturels, sans chichi. Oui, tout est formulé et fabriqué en France,
-                    avec amour !
+                    Derrière BOTANEYA se cache bien plus qu’une marque de soins capillaires. Une histoire, une vision et
+                    une passion pour les cheveux bouclés, portée par des formules clean, véganes et cruelty-free,
+                    pensées pour respecter le vivant et sublimer chaque boucle.
                 </p>
 
                 <a href="./infos.html" class="btn-light">EN SAVOIR PLUS</a>
@@ -291,6 +302,8 @@
             </div>
         </section>
     </footer>
+    <div id="cart-overlay"></div>
+
     <div id="cart-drawer">
         <div class="cart-header">
             <h3>Mon panier</h3>
@@ -300,29 +313,17 @@
         <div id="cart-items"></div>
 
         <div class="cart-footer">
-            <p class="cart-total">
+            <div class="cart-total">
                 Total : <strong><span id="cart-total">0.00</span> €</strong>
-            </p>
-            <button class="btn primary">VOIR LE PANIER</button>
+            </div>
+
+            <button id="pay-btn" class="btn primary cart-pay-btn">
+                PAYER
+            </button>
         </div>
-    </div>
-    <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "BOTANEYA",
-  "url": "https://www.botaneya.com",
-  "logo": "https://www.botaneya.com/asset/image/logo.png",
-  "description": "Marque française de soins botaniques naturels et véganes pour cheveux bouclés.",
-  "sameAs": [
-    "https://www.instagram.com/tonprofil",
-    "https://www.tiktok.com/@tonprofil"
-  ]
-}
-</script>
-    <script src="./javascrpits/scripts.js"></script>
-    <script src="./javascrpits/product.js"></script>
-    <script src="./javascrpits/accueill.js"></script>
+        <script src="./javascrpits/scripts.js"></script>
+        <script src="./javascrpits/product.js"></script>
+        <script src="./javascrpits/accueill.js"></script>
 </body>
 
 </html>

@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <!-- header-top-->
+    <!-- header-top-->
     <header class="header-top">
         <div class="container-top">
             <p>Livraison offerte en France métropolitaine, Belgique, Luxembourg, Allemagne et Espagne dès 100€ d'achat*
@@ -44,39 +44,57 @@
     <!-- header-nav-->
     <header class="header">
         <div class="container header-content">
-            <div class="logo"><img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" alt="BOTANEYA logo"></div>
+            <div class="logo"><img src="./asset/image/LOGOS_LOGO MARK BLACK_LOGO MARK BLACK.svg" alt="BOTANEYA logo">
+            </div>
             <div class="logo">BOTANEYA</div>
             <nav class="nav">
                 <a href="./index.html">Accueil</a>
                 <a href="./product.html">Produits</a>
                 <a href="./infos.html">Nous connaître</a>
-                       <a href="./fidélité.html">Fidélité et parrainage</a>
+                <a href="./fidélité.html">Fidélité et parrainage</a>
                 <a href="./conatct.html">contact</a>
                 <a href="./faq.html">FAQ</a>
                 <a href="#"><i class="fa-solid fa-user"></i></a>
-             <a href="#" id="cart-btn">
-    <span id="cart-count"></span>
-    <i class="fa-solid fa-bag-shopping"></i>
-</a>
+                <a href="#" id="cart-btn">
+                    <span id="cart-count"></span>
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </a>
             </nav>
         </div>
+        <div id="cart-overlay"></div>
+
+        <div id="cart-drawer">
+            <div class="cart-header">
+                <h3>Mon panier</h3>
+                <button id="close-cart">✖</button>
+            </div>
+
+            <div id="cart-items"></div>
+
+            <div class="cart-footer">
+                <div class="cart-total">
+                    Total : <strong><span id="cart-total">0.00</span> €</strong>
+                </div>
+
+                <button id="pay-btn" class="btn primary cart-pay-btn">
+                    PAYER
+                </button>
+            </div>
     </header>
     <!-- Section hero-->
     <section class="hero">
         <div class="container hero-content">
             <!-- COLONNE GAUCHE : TEXTE -->
             <div class="hero-text">
-              <h1 style="display: flex; text-align: center; justify-content: center; align-items: center;"> À propos de BOTANEYA</h1>
+                <h1 style="display: flex; text-align: center; justify-content: center; align-items: center;"> À propos
+                    de BOTANEYA</h1>
 
                 <ul class="hero-list">
-                    <li><i class="fa-solid fa-seedling botaneya-icon"></i> Des soins botaniques, sensoriels et
-                        authentiques</li>
-                    <li><i class="fa-solid fa-seedling botaneya-icon"></i> Des soins naturels adaptés aux cheveux
-                        bouclés</li>
+                    <li><i class="fa-solid fa-seedling botaneya-icon"></i> Des soins Végna, qui respectent la planète. </li>
+                    <li><i class="fa-solid fa-seedling botaneya-icon"></i> Des soins cruelty-free aucun test sur les animaux, </li>
                     <li><i class="fa-solid fa-seedling botaneya-icon"></i> BOTANEYA, l’expertise cosmétique clean &
-                        végane</li>
-                    <li><i class="fa-solid fa-seedling botaneya-icon"></i> Révélez la beauté naturelle de vos boucles
-                    </li>
+                        végane & cruelty-free</li>
+                    <li><i class="fa-solid fa-seedling botaneya-icon"></i>Sublimez vos boucles en respectant la nature.</li>
                 </ul>
 
                 <a href="./product.html" class="btn-primary">Voir la Sélection</a>
@@ -102,50 +120,50 @@
 
                 <!-- Image portrait -->
                 <div class="story-image">
-                    <img src="./asset/image/fleurpackfinale.png" alt="Fondatrice BOTANEYA">
+                    <img src="./asset/image/photoinfos.png" alt="Fondatrice BOTANEYA">
                 </div>
 
                 <!-- Texte -->
                 <div class="story-text">
-                    <h2>BOTANEYA – Marque française de soins botaniques pour cheveux bouclés </h2>
+                    <h2>Une femme, une histoire, une vision… </h2>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum praesentium architecto
-                        nostrum exercitationem tempore tempora ab. Quas, reprehenderit officia dolore ipsam consequatur,
-                        itaque, iste odit fugiat laudantium repellendus necessitatibus.
-                    </p>
+                        <strong>Botaneya est née d’une passion profonde pour les cheveux bouclés,</strong> de celles qui naissent d’une
+                        expérience personnelle, de défis, de recherches et d’amour pour le naturel. Derrière la marque,
+                        il y a une femme qui a longtemps cherché des soins capables de comprendre, respecter et sublimer
+                        la vraie nature des boucles, sans compromis.
+                        <br> <br>
+                       <strong>Cette passion est devenue une mission :</strong> créer des soins capillaires exigeants, efficaces et
+                        conscients. Chaque formule a été pensée avec attention, en sélectionnant  <strong>des ingrédients
+                        naturels, véganes et cruelty-free</strong>, pour offrir aux cheveux bouclés ce qu’ils méritent vraiment.
+                        Ici, aucun test sur les animaux, aucun ingrédient d’origine animale, <strong>seulement le respect du
+                        vivant et du bien-être capillaire.</strong>
 
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum praesentium architecto
-                        nostrum exercitationem tempore tempora ab. Quas, reprehenderit officia dolore ipsam consequatur,
-                        itaque,
-                        <strong>« iste odit fugiat laudantium repellendus necessitatibus. »</strong>
+                        <strong>Botaneya, c’est aussi un engagement fort pour une beauté responsable.</strong> Tous nos soins sont
+                        formulés et fabriqués en France, avec une exigence de qualité, de transparence et
+                        d’authenticité. Derrière chaque produit, il y a des heures de réflexion, de tests, de passion et
+                        l’envie de proposer bien plus qu’un simple soin : une véritable expérience.
+                        <br> <br>
+                        Parce que les cheveux bouclés ne sont pas un problème à corriger, mais une richesse à révéler.
+                       Botaneya accompagne chaque boucle, chaque texture, chaque histoire, avec douceur et
+                        bienveillance.La marque célèbre la diversité, l’identité et la confiance en soi à travers <strong>des
+                        soins qui respectent autant les cheveux que la planète.</strong>
                     </p>
 
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum praesentium architecto
-                        nostrum exercitationem tempore tempora ab. Quas, reprehenderit officia dolore ipsam consequatur,
-                        itaque, iste odit fugiat laudantium repellendus necessitatibus.
-                    </p>
                 </div>
             </div>
 
             <!-- Texte bas -->
             <div class="story-bottom">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum praesentium architecto
-                    nostrum exercitationem tempore tempora ab. Quas, reprehenderit officia dolore ipsam consequatur,
-                    itaque, iste odit fugiat laudantium repellendus necessitatibus.
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum praesentium architecto
-                    nostrum exercitationem tempore tempora ab. Quas, reprehenderit officia dolore ipsam consequatur,
-                    itaque, iste odit fugiat laudantium repellendus necessitatibus.
+                    <strong>Découvrir Botaneya,</strong> c’est entrer dans un univers où la passion rencontre l’exigence, où la nature
+                    inspire chaque formule, et où les boucles sont enfin comprises, respectées et sublimées. <strong>Botaneya,
+                    ce n’est pas qu’une marque. C’est une vision.</strong> 
                 </p>
 
                 <p class="story-highlight">
-                    <strong>Notre promesse :</strong> des boucles saines, naturelles et sublimées.
+                    <strong>Notre promesse :</strong> Soins naturels, véganes et cruelty-free pour sublimer tes boucles.
                 </p>
             </div>
 
@@ -153,34 +171,36 @@
             <div class="story-cards">
 
                 <div class="story-card">
-                    <img src="./asset/image/fleurblacnhe.png" alt="">
-                    <h3>BOTANEYA</h3>
+                    <img src="./asset/image/100végan.png" alt="">
+                    <h3>Végan</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum praesentium architecto
+                        Nos soins sont véganes, sans aucun ingrédient d’origine animale. Un choix éthique et responsable
+                        qui respecte le vivant, tout en offrant des formules efficaces et adaptées aux cheveux bouclés.
                     </p>
                 </div>
 
                 <div class="story-card">
-                    <img src="./asset/image/mousse.png" alt="">
-                    <h3>Soins naturels</h3>
+                    <img src="./asset/image/animauxrespect.png" alt="">
+                    <h3>Cruelty-free</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum praesentium architecto
+                        Nous avons fait le choix du cruelty-free par respect du bien-être animal. Aucun test n’est
+                        réalisé sur les animaux, ni sur les ingrédients ni sur les produits finis, à chaque étape de
+                        fabrication.
                     </p>
                 </div>
 
                 <div class="story-card">
-                    <img src="./asset/image/branchettes.png" alt="">
-                    <h3>Beauté naturelle</h3>
+                    <img src="./asset/image/huilevégétalephoto.png" alt="">
+                    <h3>Huile végétale</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat dolorum praesentium architecto
+                        Extraite par pression à froid, l’huile végétale de ricin, naturellement très dense et visqueuse,
+                        enveloppe la fibre capillaire pour une nutrition profonde et durable.
                     </p>
                 </div>
-
             </div>
 
         </div>
     </section>
-
     <!-- footer-->
     <footer class="site-footer">
         <div class="container footer-grid">
@@ -262,21 +282,6 @@
             </div>
         </section>
     </footer>
-    <div id="cart-drawer">
-        <div class="cart-header">
-            <h3>Mon panier</h3>
-            <button id="close-cart">✖</button>
-        </div>
-
-        <div id="cart-items"></div>
-
-        <div class="cart-footer">
-            <p class="cart-total">
-                Total : <strong><span id="cart-total">0.00</span> €</strong>
-            </p>
-            <button class="btn primary">VOIR LE PANIER</button>
-        </div>
-    </div>
     <script src="./javascrpits/scripts.js"></script>
     <script src="./javascrpits/product.js"></script>
 </body>
