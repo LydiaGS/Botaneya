@@ -117,3 +117,84 @@ body{
     font-size: 1.2rem;
   }
 }
+/*Type de cheveux*/
+.hair-types {
+    padding: 80px 10%;
+    background-color: var(--secondary);
+    text-align: center;
+}
+
+.hair-types h2 {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 50px;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.hair-card {
+    background-color: var(--accent-4);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.hair-card:hover {
+    transform: translateY(-8px);
+}
+
+.hair-card h3 {
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.hair-img {
+    width: 100%;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.hair-img:hover {
+    transform: scale(1.05);
+}
+
+.hair-card p {
+    margin-top: 15px;
+    color: var(--hover);
+    font-size: 1rem;
+}
+
+/* Modal */
+.image-modal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    justify-content: center;
+    align-items: center;
+}
+
+.image-modal img {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 20px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: white;
+    cursor: pointer;
+}

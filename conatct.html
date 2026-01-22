@@ -28,22 +28,35 @@
     <!-- header-nav-->
     <header class="header">
         <div class="container header-content">
-                <div class="logo"><img src="./asset/image/LOGO COL1_LOGO MARK COL MAIN 2.png" alt="BOTANEYA logo">
+                <div class="logo"><img src="./asset/image/logoBblanc.png" alt="BOTANEYA logo">
             </div>
             <div class="logo">BOTANEYA</div>
-      <nav class="nav">
-                <a href="./index.html">Accueil</a>
-                <a href="./product.html">Produits</a>
-                <a href="./infos.html">Nous connaître</a>
-                <a href="./utilisation.html">Types de cheveux</a>
-                <a href="./conatct.html">contact</a>
-                <a href="./faq.html">FAQ</a>
-                <a href="#"><i class="fa-solid fa-user"></i></a>
-                <a href="#" id="cart-btn">
-                    <span id="cart-count"></span>
-                    <i class="fa-solid fa-bag-shopping"></i>
-                </a>
-            </nav>
+   <nav class="nav">
+    <a href="./index.html">Accueil</a>
+
+    <div class="dropdown">
+        <a href="./product.html" class="dropbtn">Ma Boutique</a>
+        <div class="dropdown-content">
+             <a href="./product.html">Nos Produits</a>
+            <a href="./bainmiraculeux.html">Bain miraculeux</a>
+            <a href="./botaneya.html">Eau de rose bio</a>
+            <a href="./cremeboucle.html">Crème pour boucles</a>
+            <a href="./masqueboucle.html">Masque pour boucles</a>
+            <a href="./masquereparateur.html">Masque réparateur</a>
+           <a href="./serum.html">Sérum de finition</a>
+        </div>
+    </div>
+
+    <a href="./infos.html">Me connaître</a>
+    <a href="./utilisation.html">Types de cheveux</a>
+    <a href="./contact.html">Me Contact</a>
+    <a href="./faq.html">FAQ</a>
+    <a href="#"><i class="fa-solid fa-user"></i></a>
+    <a href="#" id="cart-btn">
+        <span id="cart-count"></span>
+        <i class="fa-solid fa-bag-shopping"></i>
+    </a>
+</nav>
         </div>
         <div id="cart-overlay"></div>
 
@@ -73,10 +86,10 @@
   <div class="video-overlay"></div>
 
   <div class="video-content container">
-    <h1 class="contacter">Nous contacter</h1>
+    <h1 class="contacter" style="font-size: 30px;">Nous contacter</h1>
   </div>
 </section> <br>
- <h1 style="display: flex; text-align: center; justify-content: center; align-items: center;">  Contact BOTANEYA – Service client et informations | BOTANEYA</h1>
+ <h1 style="display: flex; text-align: center; justify-content: center; align-items: center;">Service client et informations | BOTANEYA</h1>
  <section class="contact-section">
   <div class="contact-container">
 
@@ -240,8 +253,12 @@
         PAYER
     </button>
     </div>
-    <script src="./javascrpits/contact.js" defer></script>
+    <a href="#" id="scrollTopBtn">
+    <i class="fa-solid fa-chevron-up"></i>
+</a>
+    <!-- ================= SCRIPTS ================= -->
     <script src="./javascrpits/scripts.js"></script>
+    <script src="./javascrpits/contact.js" defer></script>
     <script src="./javascrpits/product.js"></script>
 </body>
 
